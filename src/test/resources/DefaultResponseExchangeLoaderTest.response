@@ -1,0 +1,7 @@
+HTTP/1.1 200 OK
+Date: Thu, 28 Mar 2013 16:14:56 GMT
+Content-Length: 126
+Content-Type: application/xml
+Server: Apache-Coyote/1.1
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rules05 xmlns="http://www.vsc-technologies.com/faredatamart/rules05" />

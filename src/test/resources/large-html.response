@@ -1,0 +1,860 @@
+HTTP/1.1 200 OK
+Date: Sun, 14 Feb 2010 20:16:04 GMT
+Content-Length: 41073
+Expires: Sun, 14 Feb 2010 20:16:05 GMT
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/7.5
+Cache-Control: private
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    
+    <title>utf-8 to iso-8859-1 encoding problem - Stack Overflow</title>
+    <link rel="stylesheet" href="http://sstatic.net/so/all.css?v=6322">
+    <link rel="shortcut icon" href="http://sstatic.net/so/favicon.ico">
+    <link rel="apple-touch-icon" href="http://sstatic.net/so/apple-touch-icon.png">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://sstatic.net/so/opensearch.xml">
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="http://sstatic.net/so/js/master.js?v=6180"></script>
+    <script type="text/javascript">var imagePath = 'http://sstatic.net/so/img/';</script>
+    
+    <link rel="canonical" href="http://stackoverflow.com/questions/1567100/utf-8-to-iso-8859-1-encoding-problem">
+    <link rel="alternate" type="application/atom+xml" title="Feed for question 'utf-8 to iso-8859-1 encoding problem'" href="/feeds/question/1567100">
+    <script src="http://sstatic.net/so/js/question.js?v=6322" type="text/javascript"></script>
+    
+
+
+    <script type="text/javascript">
+        var fkey = "eabba44c3e8f174886325e78bc024ad0";
+    
+        
+        
+        $(function() {
+            
+            vote.init(1567100);
+            comments.init();
+            styleCode();
+        
+        });
+    </script>
+
+
+</head>
+<body>
+    <noscript><div id="noscript-padding"></div></noscript>
+    <div id="notify-container">
+    </div>
+
+
+    <script type="text/javascript">
+        $(function() { notify.showFirstTime(); });
+    </script>
+
+
+    <div class="container">
+        <div id="header">
+            <div id="topbar">
+                <div id="hlinks">
+                    
+                    
+                    <a href="/users/login?returnurl=%2fquestions%2f1567100%2futf-8-to-iso-8859-1-encoding-problem">login</a>
+<span class="lsep">|</span>
+<a href="http://careers.stackoverflow.com/">careers</a>
+<span class="lsep">|</span>
+
+                    <a href="/about">about</a> <span class="lsep">|</span> <a href="/faq">faq</a>
+                </div>
+                <div id="hsearch">
+                    <form id="search" action="/search" method="get">
+                    <div>
+                        <input name="q" class="textbox" tabindex="1" onfocus="if (this.value=='search') this.value = ''" type="text" maxlength="80" size="28" value="search">
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="/"><img src="http://sstatic.net/so/img/logo.png" width="250" height="61" alt="Stack Overflow"></a>
+            </div>
+            <div id="hmenus">
+                <div class="nav">
+                    <ul>
+                        <li class="youarehere"><a href="/questions">Questions</a></li>
+                        <li><a href="/tags">Tags</a></li>
+                        <li><a href="/users">Users</a></li>
+                        <li><a href="/badges">Badges</a></li>
+                        <li><a href="/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav" style="float:right">
+                    <ul>
+                        <li style="margin-right:0px" >
+                            <a href="/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div id="content">
+            
+
+<div id="question-header">
+    <h2><a href="/questions/1567100/utf-8-to-iso-8859-1-encoding-problem" class="question-hyperlink">utf-8 to iso-8859-1 encoding problem</a></h2>
+</div>
+
+<div id="mainbar">
+<div id="question" class="">
+    
+    <div class="everyonelovesstackoverflow">
+        <script type="text/javascript">
+            document.write('<s'+'cript lang' + 'uage="jav' + 'ascript" src="http://ads.stackoverflow.com/a.aspx?ZoneID=3&amp;Task=Get&amp;IFR=False&amp;PageID=52405&amp;SiteID=1&amp;Random=' + (+new Date()) + '&amp;Keywords=encoding,php,utf-8,iso-8859-1,rss">'); 
+            document.write('</'+'scr'+'ipt>');
+        </script>
+        <noscript>
+            <div>
+            <a href="http://ads.stackoverflow.com/a.aspx?ZoneID=3&amp;Task=Click&amp;Mode=HTML&amp;SiteID=1&amp;PageID=52405">
+            <img src="http://ads.stackoverflow.com/a.aspx?ZoneID=3&amp;Task=Get&amp;Mode=HTML&amp;SiteID=1&amp;PageID=52405" alt="">
+            </a>
+            </div>
+        </noscript>
+    </div>
+
+    
+
+    <table>
+    <tr>
+    <td class="votecell">
+        
+<div class="vote">
+    <input type="hidden" value="1567100">
+    <img class="vote-up"
+        src="http://sstatic.net/so/img/vote-arrow-up.png"
+        width="40" height="25"
+        alt="vote up" title="This question is useful and clear (click again to undo)">
+    <span class="vote-count-post">
+        0
+    </span>
+    <img class="vote-down"
+        src="http://sstatic.net/so/img/vote-arrow-down.png"
+        width="40" height="25"
+        alt="vote down" title="This question is unclear or not useful (click again to undo)">
+
+    <img class="vote-favorite" 
+        src="http://sstatic.net/so/img/vote-favorite-off.png"
+        width="32" height="31"
+        alt="star" title="This is a favorite question (click again to undo)">
+    <div class="favoritecount"><b></b></div>    
+
+</div>
+
+    </td>
+    <td>
+        <div>          
+            <div class="post-text">
+                <p>I'm trying preview the latest post from an rss feed on another website. The feed is UTF-8 encoded, whilst the website is ISO-8859-1 encoded. When displaying the title, I'm using;</p>
+
+<pre><code> $post_title = 'Blogging â€“ does it pay the bills?';
+
+ echo mb_convert_encoding($post_title, 'iso-8859-1','utf-8');
+
+ // returns: Blogging ? does it pay the bills?
+ // expected: Blogging - does it pay the bills?
+</code></pre>
+
+<p>Note that the hyphen I'm expecting isn't a normal minus sign but some big-ass uber dash. Well, a few pixels longer anyway. :) Not sure how else to describe it as my keyboard can't produce that character...</p>
+
+            </div>            
+            <div class="post-taglist">
+                <a href="/questions/tagged/encoding" class="post-tag" title="show questions tagged 'encoding'" rel="tag">encoding</a> <a href="/questions/tagged/php" class="post-tag" title="show questions tagged 'php'" rel="tag">php</a> <a href="/questions/tagged/utf-8" class="post-tag" title="show questions tagged 'utf-8'" rel="tag">utf-8</a> <a href="/questions/tagged/iso-8859-1" class="post-tag" title="show questions tagged 'iso-8859-1'" rel="tag">iso-8859-1</a> <a href="/questions/tagged/rss" class="post-tag" title="show questions tagged 'rss'" rel="tag">rss</a> 
+            </div>
+            <table class="fw">
+            <tr>
+            <td class="vt">
+                <div class="post-menu"><a id="flag-post-1567100" title="flag this post for serious problems">flag</a></div>
+                
+            </td>
+        
+            <td align="right" class="post-signature">
+            <div class="user-info"><div class="user-action-time">edited <a href="/posts/1567100/revisions" title="show all edits to this post"><span title="2009-10-14 15:37:53Z" class="relativetime">Oct 14 at 15:37</span></a></div><div class="user-gravatar32"><a href="/users/112968/knittl"><img src="http://www.gravatar.com/avatar/42772921e3c69ce61ddaa10974ab35b9?s=32&amp;d=identicon&amp;r=PG" height="32" width="32" alt=""></a></div><div class="user-details"><a href="/users/112968/knittl" >knittl</a><br><span class="reputation-score" title="reputation score">5,020</span><span title="4 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">4</span></span><span title="12 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">12</span></span></div></div>
+            
+            </td>
+            
+            <td class="post-signature owner">
+            <div class="user-info"><div class="user-action-time">asked <span title="2009-10-14 15:29:56Z" class="relativetime">Oct 14 at 15:29</span></div><div class="user-gravatar32"><a href="/users/108147/matw"><img src="http://www.gravatar.com/avatar/937225269efec1e4fbe4e99013b2926f?s=32&amp;d=identicon&amp;r=PG" height="32" width="32" alt=""></a></div><div class="user-details"><a href="/users/108147/matw" >MatW</a><br><span class="reputation-score" title="reputation score">820</span><span title="8 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">8</span></span></div></div>
+            <br class="cbt">
+            <div class="accept-rate accept-answer-link" title="this user has accepted an answer for 10 of 11 eligible questions">91% accept rate</div>
+            
+            </td>
+            </tr>
+            </table>
+        </div>
+    </td>
+    </tr>
+
+    
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1567100" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+    
+    </table>
+    
+</div>
+
+
+
+
+<div id="answers">
+
+    <a name="tab-top"></a>
+    <div id="answers-header">
+        <div id="subheader">
+            <h2>4 Answers</h2>
+            <div id="tabs">
+                <a href="/questions/1567100?tab=oldest#tab-top" title="Answers in the order they were given">oldest</a>
+<a href="/questions/1567100?tab=newest#tab-top" title="Most recent answers first">newest</a>
+<a class="youarehere" href="/questions/1567100?tab=votes#tab-top" title="Answers with the most votes first">votes</a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <a name="1567116"></a>
+    
+    <div id="answer-1567116" class="answer ">
+        
+        <table>
+        <tr>
+        <td class="votecell">
+            
+<div class="vote">
+    <input type="hidden" value="1567116">
+    <img class="vote-up"
+        src="http://sstatic.net/so/img/vote-arrow-up.png"
+        width="40" height="25"
+        alt="vote up" title="This answer is useful (click again to undo)">
+    <span class="vote-count-post">
+        2
+    </span>
+    <img class="vote-down"
+        src="http://sstatic.net/so/img/vote-arrow-down.png"
+        width="40" height="25"
+        alt="vote down" title="This answer is not useful (click again to undo)">
+<img src="http://sstatic.net/so/img/vote-accepted-on.png"
+    class="vote-accepted"
+    style="cursor:default"
+    width="30"
+    height="31"
+    alt="check"
+    title="The question owner accepted this as the best answer Oct 14 at 15:56" >
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>I suspect you mean an Em Dash (—). ISO-8859-1 doesn't include this character, so you aren't going to have much luck converting it to that encoding.</p>
+
+<p>You could use <a href="http://uk2.php.net/manual/en/function.htmlentities.php" rel="nofollow">htmlentities()</a>, but I'd suggest moving off ISO-8859-1 to UTF-8 for publication. </p>
+</div>
+            <table class="fw">
+            <tr>
+            <td class="vt">
+                <div class="post-menu"><a href="/questions/1567100/utf-8-to-iso-8859-1-encoding-problem/1567116#1567116" title="permalink to this answer">link</a><span class="lsep">|</span><a id="flag-post-1567116" title="flag this post for serious problems">flag</a></div>
+                
+            </td>
+            
+            <td align="right" class="post-signature">
+            <div class="user-info"><div class="user-action-time">answered <span title="2009-10-14 15:33:38Z" class="relativetime">Oct 14 at 15:33</span></div><div class="user-gravatar32"><a href="/users/19068/david-dorward"><img src="http://www.gravatar.com/avatar/3c9f34bbf0220198b565f1ec25e5728f?s=32&amp;d=identicon&amp;r=PG" height="32" width="32" alt=""></a></div><div class="user-details"><a href="/users/19068/david-dorward" >David Dorward</a><br><span class="reputation-score" title="reputation score 24475">24.5k</span><span title="2 gold badges"><span class="badge1">&#9679;</span><span class="badgecount">2</span></span><span title="12 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">12</span></span><span title="38 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">38</span></span></div></div>
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1567116" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-1426755" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'great comment' votes received" class="cool">2</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><code>htmlentities($post&#95;title, ENT&#95;COMPAT, 'utf-8');</code> should give you an equivalent HTML-string that will be shown correctly in the browser. As it may contain entities (and does in your example) you should not use the string for generating plain-text emails for example. &ndash;&nbsp;<a href="/users/11354/stefan-gehrig" title="8747" class="comment-user">Stefan Gehrig</a> <span class="comment-date"><span title="2009-10-14 15:45:50Z">Oct 14 at 15:45</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-1427539" class="comment">
+        <td></td>
+        <td class="comment-text"><div>You don’t need <code>htmlentities</code> when using UTF-8. <code>htmlspecialchars</code> will suffice for the HTML special characters <code>&amp;</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&quot;</code> and <code>'</code>. &ndash;&nbsp;<a href="/users/53114/gumbo" title="53205" class="comment-user">Gumbo<span class="mod-flair" title="moderator">&#9830;</span></a> <span class="comment-date"><span title="2009-10-14 17:36:17Z">Oct 14 at 17:36</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-1428359" class="comment">
+        <td></td>
+        <td class="comment-text"><div>@Gumbo That's my point.  &ndash;&nbsp;<a href="/users/19068/david-dorward" title="24475" class="comment-user">David Dorward</a> <span class="comment-date"><span title="2009-10-14 19:26:12Z">Oct 14 at 19:26</span></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+        </table>
+    </div>
+
+    <div class="everyonelovesstackoverflow">
+        <script type="text/javascript">
+            document.write('<s'+'cript lang' + 'uage="jav' + 'ascript" src="http://ads.stackoverflow.com/a.aspx?ZoneID=14&amp;Task=Get&amp;IFR=False&amp;PageID=52405&amp;SiteID=1&amp;Random=' + (+new Date()) + '&amp;Keywords=encoding,php,utf-8,iso-8859-1,rss">'); 
+            document.write('</'+'scr'+'ipt>');
+        </script>
+        <noscript>
+            <div>
+            <a href="http://ads.stackoverflow.com/a.aspx?ZoneID=14&amp;Task=Click&amp;Mode=HTML&amp;SiteID=1&amp;PageID=52405">
+            <img src="http://ads.stackoverflow.com/a.aspx?ZoneID=14&amp;Task=Get&amp;Mode=HTML&amp;SiteID=1&amp;PageID=52405" alt="">
+            </a>
+            </div>
+        </noscript>
+    </div>
+
+    
+
+    <a name="1567286"></a>
+    
+    <div id="answer-1567286" class="answer ">
+        
+        <table>
+        <tr>
+        <td class="votecell">
+            
+<div class="vote">
+    <input type="hidden" value="1567286">
+    <img class="vote-up"
+        src="http://sstatic.net/so/img/vote-arrow-up.png"
+        width="40" height="25"
+        alt="vote up" title="This answer is useful (click again to undo)">
+    <span class="vote-count-post">
+        2
+    </span>
+    <img class="vote-down"
+        src="http://sstatic.net/so/img/vote-arrow-down.png"
+        width="40" height="25"
+        alt="vote down" title="This answer is not useful (click again to undo)">
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p><code>mb_convert_encoding</code> only converts the internal encoding - it won't actually change the byte sequences for characters from one character set to another.  For that you need <a href="http://us.php.net/manual/en/function.iconv.php" rel="nofollow">iconv</a>.</p>
+
+<pre><code>mb_internal_encoding( 'UTF-8' );
+ini_set( 'default_charset', 'ISO-8859-1' );
+
+$post_title = 'Blogging — does it pay the bills?'; // I used the actual m-dash here to best mimic your scenario
+
+echo iconv( 'UTF-8', 'ISO-8859-1//TRANSLIT', $post_title );
+</code></pre>
+
+<p>Or, as others have said, just convert out-of-range characters to html entities.</p>
+</div>
+            <table class="fw">
+            <tr>
+            <td class="vt">
+                <div class="post-menu"><a href="/questions/1567100/utf-8-to-iso-8859-1-encoding-problem/1567286#1567286" title="permalink to this answer">link</a><span class="lsep">|</span><a id="flag-post-1567286" title="flag this post for serious problems">flag</a></div>
+                
+            </td>
+            
+            <td align="right" class="post-signature">
+            <div class="user-info"><div class="user-action-time">answered <span title="2009-10-14 15:58:55Z" class="relativetime">Oct 14 at 15:58</span></div><div class="user-gravatar32"><a href="/users/8815/peter-bailey"><img src="http://www.gravatar.com/avatar/5fe96558ef20feb210cf4fd517e7c229?s=32&amp;d=identicon&amp;r=PG" height="32" width="32" alt=""></a></div><div class="user-details"><a href="/users/8815/peter-bailey" >Peter Bailey</a><br><span class="reputation-score" title="reputation score 15876">15.9k</span><span title="1 gold badge"><span class="badge1">&#9679;</span><span class="badgecount">1</span></span><span title="11 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">11</span></span><span title="34 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">34</span></span></div></div>
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1567286" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+        </table>
+    </div>
+
+
+    <a name="1567329"></a>
+    
+    <div id="answer-1567329" class="answer ">
+        
+        <table>
+        <tr>
+        <td class="votecell">
+            
+<div class="vote">
+    <input type="hidden" value="1567329">
+    <img class="vote-up"
+        src="http://sstatic.net/so/img/vote-arrow-up.png"
+        width="40" height="25"
+        alt="vote up" title="This answer is useful (click again to undo)">
+    <span class="vote-count-post">
+        2
+    </span>
+    <img class="vote-down"
+        src="http://sstatic.net/so/img/vote-arrow-down.png"
+        width="40" height="25"
+        alt="vote down" title="This answer is not useful (click again to undo)">
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>I suppose the following:</p>
+
+<ul>
+<li>Your file is actually encoded with UTF-8</li>
+<li>Your editor interprets the file with Windows-1252</li>
+</ul>
+
+<p>The reason for that is that your <em>EM DASH</em> character (U+2014) is represented by <code>â€“</code>. That’s exactly what you get when you interpret the UTF-8 code word of that character (0xE28094) with <a href="http://en.wikipedia.org/wiki/Windows-1252" rel="nofollow">Windows-1252</a> (0xE2=<code>â</code>, 0x80=<code>€</code>, 0x94=<code>”</code>). So you first need to fix your editor encoding.</p>
+
+<p>And the reason for the <code>?</code> in your output is that ISO 8859-1 doesn’t contain the <em>EM DASH</em> character.</p>
+</div>
+            <table class="fw">
+            <tr>
+            <td class="vt">
+                <div class="post-menu"><a href="/questions/1567100/utf-8-to-iso-8859-1-encoding-problem/1567329#1567329" title="permalink to this answer">link</a><span class="lsep">|</span><a id="flag-post-1567329" title="flag this post for serious problems">flag</a></div>
+                
+            </td>
+            
+            <td align="right" class="post-signature">
+            <div class="user-info"><div class="user-action-time">answered <span title="2009-10-14 16:06:00Z" class="relativetime">Oct 14 at 16:06</span></div><div class="user-gravatar32"><a href="/users/53114/gumbo"><img src="http://www.gravatar.com/avatar/cd501083459cbc21fccae78e2d03bee2?s=32&amp;d=identicon&amp;r=PG" height="32" width="32" alt=""></a></div><div class="user-details"><a href="/users/53114/gumbo" >Gumbo</a><span class="mod-flair" title="moderator">&#9830;</span><br><span class="reputation-score" title="reputation score 53205">53.2k</span><span title="2 gold badges"><span class="badge1">&#9679;</span><span class="badgecount">2</span></span><span title="39 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">39</span></span><span title="73 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">73</span></span></div></div>
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1567329" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-1427384" class="comment">
+        <td></td>
+        <td class="comment-text"><div>+1 for a great explanation of byte-sequences vs characters. &ndash;&nbsp;<a href="/users/8815/peter-bailey" title="15876" class="comment-user">Peter Bailey</a> <span class="comment-date"><span title="2009-10-14 17:15:45Z">Oct 14 at 17:15</span></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+        </table>
+    </div>
+
+
+    <a name="1567183"></a>
+    
+    <div id="answer-1567183" class="answer ">
+        
+        <table>
+        <tr>
+        <td class="votecell">
+            
+<div class="vote">
+    <input type="hidden" value="1567183">
+    <img class="vote-up"
+        src="http://sstatic.net/so/img/vote-arrow-up.png"
+        width="40" height="25"
+        alt="vote up" title="This answer is useful (click again to undo)">
+    <span class="vote-count-post">
+        1
+    </span>
+    <img class="vote-down"
+        src="http://sstatic.net/so/img/vote-arrow-down.png"
+        width="40" height="25"
+        alt="vote down" title="This answer is not useful (click again to undo)">
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>It's probably an em dash (U+2014), and what you're trying to do isn't converting the encoding, because the hyphen is a different character. In other words, you want to search for such characters and replace them manually.</p>
+
+<p>Better yet, just switch the website to UTF-8. It largely coincides with Latin-1 and is more appropriate for a website in 2009.</p>
+</div>
+            <table class="fw">
+            <tr>
+            <td class="vt">
+                <div class="post-menu"><a href="/questions/1567100/utf-8-to-iso-8859-1-encoding-problem/1567183#1567183" title="permalink to this answer">link</a><span class="lsep">|</span><a id="flag-post-1567183" title="flag this post for serious problems">flag</a></div>
+                
+            </td>
+            
+            <td align="right" class="post-signature">
+            <div class="user-info"><div class="user-action-time">answered <span title="2009-10-14 15:43:57Z" class="relativetime">Oct 14 at 15:43</span></div><div class="user-gravatar32"><a href="/users/168382/reinis-i"><img src="http://www.gravatar.com/avatar/4aacf7c371b53f2ff8210da56466491a?s=32&amp;d=identicon&amp;r=PG" height="32" width="32" alt=""></a></div><div class="user-details"><a href="/users/168382/reinis-i" >Reinis I.</a><br><span class="reputation-score" title="reputation score">1,627</span><span title="3 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">3</span></span><span title="11 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">11</span></span></div></div>
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1567183" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-1426829" class="comment">
+        <td></td>
+        <td class="comment-text"><div><i>sigh</i> I totally agree about switching to UTF-8, but the current encoding is a legacy that I've got to tolerate for now... :\ &ndash;&nbsp;<a href="/users/108147/matw" title="820" class="comment-user owner">MatW</a> <span class="comment-date"><span title="2009-10-14 15:56:33Z">Oct 14 at 15:56</span></span></div></td>
+    </tr>
+            
+    <tr id="comment-1427279" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'great comment' votes received" class="cool">1</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div>To be pedantic, only half of Latin-1 has parity with UTF-8 - which is the ASCII half of Latin-1 i.e., any character that fits in 7 bits.  The Latin-1 range from 0x80-0xFF is invalid in UTF-8.  But I agree that converting to UTF-8 is a good idea if possible. &ndash;&nbsp;<a href="/users/8815/peter-bailey" title="15876" class="comment-user">Peter Bailey</a> <span class="comment-date"><span title="2009-10-14 17:00:29Z">Oct 14 at 17:00</span></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    
+</td>
+</tr>
+        </table>
+    </div>
+
+    <form id="post-form" action="/questions/1567100/answer/submit" method="post">
+        <h2 class="space">Your Answer</h2>
+        
+<script src="http://sstatic.net/so/Js/wmd.js?v=6016" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(function() { 
+        editorReady(1, heartbeat.answers);
+    });   
+</script>
+
+<div id="post-editor">
+
+    
+    <div id="wmd-container">
+        <div id="wmd-button-bar"></div>
+        <textarea id="wmd-input" name="post-text" cols="92" rows="15" tabindex="101"></textarea>
+    </div>
+
+
+    <div class="community-option">
+        <input id="communitymode" name="communitymode" type="checkbox" >
+        <label for="communitymode" title="community owned posts do not generate any reputation for the owner, have a lower reputation barrier for collaborative editing, and show only a revision history instead of a signature block">community wiki</label>
+    </div>
+
+    <div id="wmd-preview"></div>
+
+
+    <div id="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="eabba44c3e8f174886325e78bc024ad0">
+        <input id="author" name="author" type="text">
+    </div>
+</div>   
+<div class="form-item">
+    <table>
+    <tr>
+    <td class="vm">
+        <label for="openid_identifier">OpenID Login</label>
+        <input id="openid_identifier" name="openid_identifier" class="openid-identifer" type="text" size="40" maxlength="200" value="" tabindex="104">
+        <div class="form-item-info">
+            Get an <a href="http://openid.net/get/" target="_blank">OpenID</a>
+        </div>
+    </td>
+
+    <td class="orcell">
+        <div class="orword">or</div>
+        <div class="orline"></div>
+    </td>
+    <td class="vm">
+        <div>
+            <label for="display-name">Name</label>
+            <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+        </div>
+        <div>
+            <label for="m-address">Email</label>
+            <input id="m-address" name="m-address" type="text" size="40" maxlength="100" value="" tabindex="106">
+            <span class="edit-field-overlay" style="color:#999; font-weight:normal">never shown</span>
+        </div>
+        <div>
+            <label for="home-page">Home Page</label>
+            <input id="home-page" name="home-page" type="text" size="40" maxlength="200" value="" tabindex="107">
+        </div>
+    </td>
+
+    </tr>
+    </table>
+</div>
+
+        
+        <div class="form-submit cbt"><input id="submit-button" type="submit" value="Post Your Answer" tabindex="110"></div>
+    </form>
+    
+    
+
+    <h2 class="space">
+        Not the answer you're looking for?
+        Browse other questions tagged <a href="/questions/tagged/encoding" class="post-tag" title="show questions tagged 'encoding'" rel="tag">encoding</a> <a href="/questions/tagged/php" class="post-tag" title="show questions tagged 'php'" rel="tag">php</a> <a href="/questions/tagged/utf-8" class="post-tag" title="show questions tagged 'utf-8'" rel="tag">utf-8</a> <a href="/questions/tagged/iso-8859-1" class="post-tag" title="show questions tagged 'iso-8859-1'" rel="tag">iso-8859-1</a> <a href="/questions/tagged/rss" class="post-tag" title="show questions tagged 'rss'" rel="tag">rss</a>  or <a href="/questions/ask">ask your own question</a>.
+    </h2>
+</div>
+
+<img src="/posts/1567100/ivc/51e4" class="dno" alt="">
+
+</div>
+
+<div id="sidebar" style="width:220px">
+
+
+<div class="module newuser" style="display:none">
+    <h4>Hello World!</h4>
+    <div>
+        <p>Stack Overflow is a <b>collaboratively edited question and answer site for programmers</b> &ndash; regardless of platform or language. It's 100% free, no registration required.</p>
+        <p class="tar"><a href="/about">about &raquo;</a>&nbsp;&nbsp;&nbsp;<a href="/faq">faq &raquo;</a></p>
+    </div>
+</div>
+    <div class="module" style="padding-bottom:1px">
+    <p class="label-key">tagged</p>
+    <div class="tagged">
+        <a href="/questions/tagged/php" class="post-tag" title="show questions tagged 'php'" rel="tag">php</a>&nbsp;<span class="item-multiplier">&times;&nbsp;28713</span><br>
+<a href="/questions/tagged/encoding" class="post-tag" title="show questions tagged 'encoding'" rel="tag">encoding</a>&nbsp;<span class="item-multiplier">&times;&nbsp;982</span><br>
+<a href="/questions/tagged/utf-8" class="post-tag" title="show questions tagged 'utf-8'" rel="tag">utf-8</a>&nbsp;<span class="item-multiplier">&times;&nbsp;679</span><br>
+<a href="/questions/tagged/rss" class="post-tag" title="show questions tagged 'rss'" rel="tag">rss</a>&nbsp;<span class="item-multiplier">&times;&nbsp;593</span><br>
+<a href="/questions/tagged/iso-8859-1" class="post-tag" title="show questions tagged 'iso-8859-1'" rel="tag">iso-8859-1</a>&nbsp;<span class="item-multiplier">&times;&nbsp;33</span><br>
+
+    </div> 
+    <p class="label-key">asked</p>
+    <p class="label-value" title="2009-10-14 15:29:56Z">4 months ago</p>
+    <p class="label-key">viewed</p>
+    <p class="label-value">293 times</p>
+
+    <p class="label-key">latest activity</p>
+    <p class="label-value" title="2009-10-14 16:06:00Z">4 months ago</p>
+
+    </div>
+
+    
+    <div class="everyonelovesstackoverflow">
+        <script type="text/javascript">
+            document.write('<s'+'cript lang' + 'uage="jav' + 'ascript" src="http://ads.stackoverflow.com/a.aspx?ZoneID=4&amp;Task=Get&amp;IFR=False&amp;PageID=52405&amp;SiteID=1&amp;Random=' + (+new Date()) + '&amp;Keywords=encoding,php,utf-8,iso-8859-1,rss">'); 
+            document.write('</'+'scr'+'ipt>');
+        </script>
+        <noscript>
+            <div>
+            <a href="http://ads.stackoverflow.com/a.aspx?ZoneID=4&amp;Task=Click&amp;Mode=HTML&amp;SiteID=1&amp;PageID=52405">
+            <img src="http://ads.stackoverflow.com/a.aspx?ZoneID=4&amp;Task=Get&amp;Mode=HTML&amp;SiteID=1&amp;PageID=52405" alt="">
+            </a>
+            </div>
+        </noscript>
+    </div>
+
+    
+    <div class="welovestackoverflow">
+        <script type="text/javascript">
+            
+	document.write(
+	   '<strong>Wanted:</strong> ' +
+	   '<a href="http://jobs.stackoverflow.com/?6256">' +
+	   "C++ Contractors for Surgical Simulation/Visualization Project" +
+	   ' at ' +
+	   "JDX Solutions</a> (" +
+	   "Telecommute (100% remote work, unless you happen to be in the UK) / Durham, United Kingdom" +
+	   '). See this and other great job listings at ' +
+	   '<a href="http://jobs.stackoverflow.com">jobs.stackoverflow.com</a>.');
+	
+        </script>
+    </div>
+    
+    <div class="module">
+    <h4>Related</h4>
+    <div class="related">
+    <div class="spacer">
+<a href="/questions/1780204/switch-website-encoding-from-iso-8859-1-to-utf-8" class="question-hyperlink">Switch website encoding from ISO-8859-1 to UTF-8</a>
+</div>
+<div class="spacer">
+<a href="/questions/655891/converting-utf-8-to-iso-8859-1-in-java-how-to-keep-it-as-single-byte" class="question-hyperlink">Converting UTF-8 to ISO-8859-1 in Java - how to keep it as single byte</a>
+</div>
+<div class="spacer">
+<a href="/questions/1273986/converting-utf-8-to-iso-8859-1-in-java" class="question-hyperlink">Converting UTF-8 to ISO-8859-1 in Java</a>
+</div>
+<div class="spacer">
+<a href="/questions/1922199/c-convert-string-from-utf-8-to-iso-8859-1-latin1-h" class="question-hyperlink">C# Convert string from UTF-8 to ISO-8859-1 (Latin1) H</a>
+</div>
+<div class="spacer">
+<a href="/questions/1927127/re-encode-url-from-utf-8-encoded-to-iso-8859-1-encoded" class="question-hyperlink">Re-encode url from utf-8 encoded to iso-8859-1 encoded</a>
+</div>
+<div class="spacer">
+<a href="/questions/652161/how-do-i-convert-between-iso-8859-1-and-utf-8-in-java" class="question-hyperlink">How do I convert between ISO-8859-1 and UTF-8 in Java?</a>
+</div>
+<div class="spacer">
+<a href="/questions/1597626/change-website-character-encoding-from-iso-8859-1-to-utf-8" class="question-hyperlink">Change Website Character encoding from iso-8859-1 to UTF-8</a>
+</div>
+<div class="spacer">
+<a href="/questions/997236/problems-reading-cdata-section-with-special-chars-iso-8859-1-encoding" class="question-hyperlink">problems reading CDATA section with special chars (ISO-8859-1 encoding)</a>
+</div>
+<div class="spacer">
+<a href="/questions/139260/writing-xml-files-using-xmltextwriter-with-iso-8859-1-encoding-c" class="question-hyperlink">Writing XML files using XmlTextWriter with ISO-8859-1 encoding (C#)</a>
+</div>
+<div class="spacer">
+<a href="/questions/1499397/encoding-utf8-string-to-iso-8859-1-string-vb-net" class="question-hyperlink">Encoding UTF8 string to ISO-8859-1 String (VB.NET)</a>
+</div>
+<div class="spacer">
+<a href="/questions/153482/setting-iso-8859-1-encoding-for-a-single-tapestry-4-page-in-application-that-is-o" class="question-hyperlink">Setting ISO-8859-1 encoding for a single Tapestry 4 page in application that is otherwise totally UTF-8</a>
+</div>
+<div class="spacer">
+<a href="/questions/153527/setting-the-character-encoding-in-form-submit-for-internet-explorer" class="question-hyperlink">Setting the character encoding in form submit for Internet Explorer</a>
+</div>
+<div class="spacer">
+<a href="/questions/1928436/netbeans-utf8-encoding-mess-tool-to-search-for-source-files-according-to-its-en" class="question-hyperlink">netbeans utf8 encoding mess - tool to search for source files according to its encoding and to fix them</a>
+</div>
+<div class="spacer">
+<a href="/questions/657871/another-jquery-encoding-problem-on-ie" class="question-hyperlink">Another JQuery encoding problem, on IE</a>
+</div>
+<div class="spacer">
+<a href="/questions/498636/java-app-unable-to-read-iso-8859-1-encoded-file-correctly" class="question-hyperlink">Java App : Unable to read iso-8859-1 encoded file correctly.</a>
+</div>
+<div class="spacer">
+<a href="/questions/374425/convert-utf8-characters-to-iso-88591-and-back-in-php" class="question-hyperlink">Convert utf8-characters to iso-88591 and back in PHP</a>
+</div>
+<div class="spacer">
+<a href="/questions/1012120/iso-8859-1-to-utf8-in-asp-net-2" class="question-hyperlink">ISO-8859-1 to UTF8 in ASP.NET 2</a>
+</div>
+<div class="spacer">
+<a href="/questions/1452366/is-iso-8859-1-supported-in-silverlight" class="question-hyperlink">Is iso-8859-1 supported in Silverlight?</a>
+</div>
+<div class="spacer">
+<a href="/questions/1394305/how-to-get-json-encode-to-work-with-iso-8859-1-aao" class="question-hyperlink">How to get json_encode() to work with ISO-8859-1 (&#229;&#228;&#246;)</a>
+</div>
+
+    </div>
+    </div>
+
+</div>
+
+<div id="mainbar-footer">    
+    
+<div id="feed-link">
+    <div id="feed-link-image"><a href="/feeds/question/1567100" title="feed of this question and its answers"><img src="http://sstatic.net/so/Img/feed-icon-small.png" width="14" height="14" alt="feed icon"></a></div>
+    <div id="feed-link-text"><a href="/feeds/question/1567100" title="feed of this question and its answers">question feed</a></div>
+</div>
+
+</div>
+
+
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div id="footer-menu">
+                <a href="/about">about</a> |
+                <a href="/faq">faq</a> |
+                <a href="http://blog.stackoverflow.com/">blog</a> |
+                <a href="http://itc.conversationsnetwork.org/series/stackoverflow.html">podcast</a> |
+                <a href="/privacy">privacy policy</a> |
+                <a href="http://ads.stackoverflow.com/a.aspx?ZoneID=0&amp;BannerID=323&amp;AdvertiserID=5&amp;CampaignID=194&amp;Task=Click&amp;SiteID=1">advertising info</a> |
+                <b><a href="mailto:team@stackoverflow.com">contact us</a></b> |
+                <b><a href="http://meta.stackoverflow.com">feedback always welcome</a></b>
+                <div id="footer-sites">
+                    <span style="color:#FE7A15;font-size:140%">&#9632;</span>&nbsp;<a href="http://stackoverflow.com">stackoverflow.com</a>&nbsp;&nbsp;
+                    <span style="color:#FE7A15;font-size:140%">&#9632;</span>&nbsp;<a href="http://careers.stackoverflow.com">careers</a>&nbsp;&nbsp;
+                    <span style="color:#E8272C;font-size:140%">&#9632;</span>&nbsp;<a href="http://serverfault.com">serverfault.com</a>&nbsp;&nbsp;
+                    <span style="color:#00AFEF;font-size:140%">&#9632;</span>&nbsp;<a href="http://superuser.com">superuser.com</a>&nbsp;&nbsp;
+                    <span style="color:#969696;font-size:140%">&#9632;</span>&nbsp;<a href="http://meta.stackoverflow.com">meta</a>&nbsp;&nbsp;
+                    <a href="http://www.howtogeek.com">howtogeek.com</a>&nbsp;&nbsp;
+                    <a href="http://doctype.com">doctype.com</a>
+                </div>
+            </div>
+            <div id="footer-flair">
+                <img src="http://sstatic.net/so/Img/footer-cc-wiki-peak-internet.png" width="168" height="67" alt="cc-wiki, PEAK Internet" usemap="#footermap">
+                <map name="footermap">
+                    <area href="http://creativecommons.org/licenses/by-sa/2.5/" alt="cc-wiki" title="Creative Commons: Attribution - Share Alike"
+                        coords="0,0,50,67">
+                    <area href="http://www.peakinternet.com/business/hosting/colocation-dedicated#" alt="PEAK Internet"
+                        title="powered by PEAK Internet dedicated server hosting" coords="62,0,168,67">
+                </map>
+                <div id="svnrev">svn revision: 6322</div>
+            
+            </div>
+            <div id="copyright">
+                site design and logo is &copy; 2010 stackoverflow.com llc; 
+                user contributed content licensed under <a href="http://creativecommons.org/licenses/by-sa/2.5/" rel="license">cc-wiki</a> with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+        </div>
+    </div>
+    
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+    
+    <script type="text/javascript">
+        document.write(unescape("%3Cscript src='http://www.google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-5620270-1");
+        pageTracker._trackPageview();
+    </script>
+    <script type="text/javascript">
+        _qoptions = { qacct : "p-c1rF4kxgLUzNc" };
+    </script>
+    <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+        
+</body>
+</html>

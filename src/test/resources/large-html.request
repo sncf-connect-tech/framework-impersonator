@@ -1,0 +1,4 @@
+GET /questions/1567100/utf-8-to-iso-8859-1-encoding-problem HTTP/1.1
+Host: stackoverflow.com
+Content-Length: 0
+
